@@ -12,14 +12,22 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormGroup from '@material-ui/core/FormGroup';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
+import { red } from '@material-ui/core/colors';
 
 const styles = {
+
   root: {
-    width: 770,
+    flexGrow: 1,
+  },
+  grow: {
+    flexGrow: 1,
   },
   menuButton: {
     marginLeft: -12,
     marginRight: 20,
+  },
+  appbar: {
+      backgroundColor: '#b71c1c',
   },
 };
 
@@ -56,7 +64,7 @@ class MenuAppBar extends React.Component {
             label={auth ? 'Logout' : 'Login'}
           />
         </FormGroup>
-        <AppBar position="static">
+        <AppBar position="static" className={classes.appbar}>
           <Toolbar>
             <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
               <MenuIcon />
@@ -75,6 +83,7 @@ class MenuAppBar extends React.Component {
                   <AccountCircle />
                 </IconButton>
                 <Menu
+                className="menu-bar"
                   id="menu-appbar"
                   anchorEl={anchorEl}
                   anchorOrigin={{
@@ -88,8 +97,8 @@ class MenuAppBar extends React.Component {
                   open={open}
                   onClose={this.handleClose}
                 >
-                  <MenuItem onClick={this.handleClose}>Profile</MenuItem>
-                  <MenuItem onClick={this.handleClose}>My account</MenuItem>
+                  <MenuItem style={{color:'b71c1c'}} onClick={this.handleClose}>Profile</MenuItem>
+                  <MenuItem style={{color:'b71c1c'}} onClick={this.handleClose}>My account</MenuItem>
                 </Menu>
               </div>
             )}
