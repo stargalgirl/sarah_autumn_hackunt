@@ -1,15 +1,14 @@
 import React from 'react';
 
 class GetLocation extends React.Component {
-
     geocoder
     city
 
     codeLatLng(lat, lng) {
   
-      var latlng = new this.google.maps.LatLng(lat, lng);
+      var latlng = new google.maps.LatLng(lat, lng);
       this.geocoder.geocode({'latLng': latlng}, function(results, status) {
-        if (status == this.google.maps.GeocoderStatus.OK) {
+        if (status == google.maps.GeocoderStatus.OK) {
         console.log(results)
           if (results[1]) {
            //formatted address
@@ -54,7 +53,7 @@ class GetLocation extends React.Component {
       if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(this.successFunction, this.errorFunction);
       }else{
-        this.geocoder = new this.google.maps.Geocoder();
+        this.geocoder = new google.maps.Geocoder();
       }  
   }
 

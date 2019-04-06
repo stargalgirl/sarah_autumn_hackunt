@@ -12,3 +12,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.SOSButton {
+  position: flex;
+  object-position: 5px;
+  object-fit: contain;
+}
