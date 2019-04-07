@@ -3,16 +3,12 @@
 }
 
 .flood_picture {
-  margin-left:10px;
-  margin-right: 10px;
   width: 100px;
   height: 100px;
 }
 
 .flood_container {
-  margin-left: 500px;
-  text-align: center;
-  display: flex;
+  vertical-align: middle;
 }
 
 .wrapper {
@@ -21,26 +17,22 @@
 }
 
 .fire_picture {
-  margin-right: 10px;
   width: 100px;
   height: 100px;
 }
 .fire_container {
-  margin-left: 500px;
-  text-align: center;
-  display: flex;
+  vertical-align: middle;
 }
 
 .picture {
-  margin-left:10px;
-  margin-right: 10px;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
+  position: relative;
+  top: 5px;
+  bottom: 5px; 
 }
 .container {
-  margin-left: 450px;
-  text-align: center;
-  display: flex;
+  vertical-align: middle;
 }
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
