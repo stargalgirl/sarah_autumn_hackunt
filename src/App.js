@@ -46,8 +46,8 @@ class App extends Component {
               <br></br>
               <TornadoChecklist></TornadoChecklist>
             </div>
-            
-            <h3>Current Weather Radar:</h3>
+            <h3>Weather Radar:</h3>
+            <p>Current Location: Denton, TX 76205</p>
             <img src="../badWeather.png"></img>
         </div>
       );
@@ -71,8 +71,8 @@ class App extends Component {
             <div className="wrapper">
               <EarthquakeChecklist></EarthquakeChecklist>
             </div>
-            
-            <h3>Current Weather Radar:</h3>
+            <h3>Weather Radar:</h3>
+            <p>Current Location: Denton, TX 76205</p>
             <img src="../badWeather.png"></img>
         </div>
       );
@@ -96,8 +96,8 @@ class App extends Component {
             <div className="wrapper">
               <FireChecklist></FireChecklist>
             </div>
-            
-            <h3>Current Weather Radar:</h3>
+            <h3>Weather Radar:</h3>
+            <p>Current Location: Denton, TX 76205</p>
             <img src="../badWeather.png"></img>
         </div>
       );
@@ -121,8 +121,8 @@ class App extends Component {
             <div className="wrapper">
               <FloodChecklist></FloodChecklist>
             </div>
-            
-            <h3>Current Weather Radar:</h3>
+            <h3>Weather Radar:</h3>
+            <p>Current Location: Denton, TX 76205</p>
             <img src="../badWeather.png"></img>
         </div>
       );
@@ -146,8 +146,8 @@ class App extends Component {
             <div className="wrapper">
               <HurricaneChecklist></HurricaneChecklist>
             </div>
-            
-            <h3>Current Weather Radar:</h3>
+            <h3>Weather Radar:</h3>
+            <p>Current Location: Denton, TX 76205</p>
             <img src="../badWeather.png"></img>
         </div>
       );
