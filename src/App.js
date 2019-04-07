@@ -5,6 +5,7 @@ import './App.css';
 import Menu from './Menu'
 import Dialog from './Dialog'
 import TwoButtons from './TwoButtons'
+import TornadoChecklist from './TornadoChecklist'
 
 class App extends Component {
 
@@ -22,8 +23,12 @@ class App extends Component {
         <br></br>
         <TwoButtons></TwoButtons>
         <br></br>
-        <h3>Current Radar:</h3>
-      <img src="../badWeather.png" alt="current radar of weather"/>
+        <div className="container">
+          <h3>Safety Checklist:</h3>
+          <TornadoChecklist></TornadoChecklist>
+          <h3>Current Radar:</h3>
+          <img src="../badWeather.png" alt="current radar of weather"/>
+        </div>
       </div>
     );
   }
