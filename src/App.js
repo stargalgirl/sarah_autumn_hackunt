@@ -7,6 +7,10 @@ import Dialog from './Dialog'
 import TwoButtons from './TwoButtons'
 import { List } from '@material-ui/core';
 import TornadoChecklist from './TornadoChecklist'
+import EarthquakeChecklist from './EarthquakeChecklist'
+import HurricaneChecklist from './HurricaneChecklist'
+import FloodChecklist from './FloodChecklist'
+import FireChecklist from './FireChecklist'
 
 var list = new List("tornado", "flood", "earthquake", "fire", "hurricane")
 var index = Math.floor(Math.random() * 5)
@@ -57,7 +61,7 @@ class App extends Component {
           <TwoButtons></TwoButtons>
           <h3>Safety Checklist:</h3>
             <div className="wrapper">
-              <TornadoChecklist></TornadoChecklist>
+              <EarthquakeChecklist></EarthquakeChecklist>
             </div>
             
             <h3>Current Weather Radar:</h3>
@@ -81,7 +85,7 @@ class App extends Component {
           <TwoButtons></TwoButtons>
           <h3>Safety Checklist:</h3>
             <div className="wrapper">
-              <TornadoChecklist></TornadoChecklist>
+              <FireChecklist></FireChecklist>
             </div>
             
             <h3>Current Weather Radar:</h3>
@@ -105,7 +109,7 @@ class App extends Component {
           <TwoButtons></TwoButtons>
           <h3>Safety Checklist:</h3>
             <div className="wrapper">
-              <TornadoChecklist></TornadoChecklist>
+              <FloodChecklist></FloodChecklist>
             </div>
             
             <h3>Current Weather Radar:</h3>
@@ -129,7 +133,7 @@ class App extends Component {
           <TwoButtons></TwoButtons>
             <h3>Safety Checklist:</h3>
             <div className="wrapper">
-              <TornadoChecklist></TornadoChecklist>
+              <HurricaneChecklist></HurricaneChecklist>
             </div>
             
             <h3>Current Weather Radar:</h3>
