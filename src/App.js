@@ -6,6 +6,7 @@ import Menu from './Menu'
 import Dialog from './Dialog'
 import TwoButtons from './TwoButtons'
 import { List } from '@material-ui/core';
+import TornadoChecklist from './TornadoChecklist'
 
 var list = new List("tornado", "flood", "earthquake", "fire", "hurricane")
 var index = Math.floor(Math.random() * 5)

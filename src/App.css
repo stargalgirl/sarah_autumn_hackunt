@@ -2,17 +2,16 @@
   text-align: center;
 }
 
-.container {
-  text-align: center;
-  display: flex;
-  margin-left: 525px;
-} 
 .picture {
   margin-left: -300px;
   width: 100px;
   height: 100px;
 }
 
+.container {
+  text-align: center;
+  display: inline-block;
+}
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
