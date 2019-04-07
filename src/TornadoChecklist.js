@@ -43,7 +43,7 @@ class TornadoChecklist extends React.Component {
 
     return (
       <List dense className={classes.root}>
-        {["Find shelter","Find a low room with no windows", "Take shelter under something heavy", ].map(value => (
+        {["Find shelter or lowest area","Stay away from windows", "Cover/shield yourself from debris", "Cover your head", "Hold on to something sturdy"].map(value => (
           <ListItem key={value} button>
             <ListItemText primary={`${value}`} />
             <ListItemSecondaryAction>

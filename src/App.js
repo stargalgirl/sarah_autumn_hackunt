@@ -30,6 +30,14 @@ class App extends Component {
           </div>
           <br></br>
           <TwoButtons></TwoButtons>
+          <h3>Safety Checklist:</h3>
+            <div className="wrapper">
+              <br></br>
+              <TornadoChecklist></TornadoChecklist>
+            </div>
+            
+            <h3>Current Weather Radar:</h3>
+            <img src="../badWeather.png"></img>
         </div>
       );
     }
@@ -47,6 +55,13 @@ class App extends Component {
           </div>
           <br></br>
           <TwoButtons></TwoButtons>
+          <h3>Safety Checklist:</h3>
+            <div className="wrapper">
+              <TornadoChecklist></TornadoChecklist>
+            </div>
+            
+            <h3>Current Weather Radar:</h3>
+            <img src="../badWeather.png"></img>
         </div>
       );
     }
@@ -64,6 +79,13 @@ class App extends Component {
           </div>
           <br></br>
           <TwoButtons></TwoButtons>
+          <h3>Safety Checklist:</h3>
+            <div className="wrapper">
+              <TornadoChecklist></TornadoChecklist>
+            </div>
+            
+            <h3>Current Weather Radar:</h3>
+            <img src="../badWeather.png"></img>
         </div>
       );
     }
@@ -81,6 +103,13 @@ class App extends Component {
           </div>
           <br></br>
           <TwoButtons></TwoButtons>
+          <h3>Safety Checklist:</h3>
+            <div className="wrapper">
+              <TornadoChecklist></TornadoChecklist>
+            </div>
+            
+            <h3>Current Weather Radar:</h3>
+            <img src="../badWeather.png"></img>
         </div>
       );
     }
@@ -98,11 +127,18 @@ class App extends Component {
           </div>
           <br></br>
           <TwoButtons></TwoButtons>
+            <h3>Safety Checklist:</h3>
+            <div className="wrapper">
+              <TornadoChecklist></TornadoChecklist>
+            </div>
+            
+            <h3>Current Weather Radar:</h3>
+            <img src="../badWeather.png"></img>
         </div>
       );
     }else{
       return(
-        <div>Hi</div>
+        <div>Error</div>
       )
     }
   }

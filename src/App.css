@@ -10,9 +10,15 @@
 }
 
 .flood_container {
-  margin-left: 215px;
+  margin-left: 500px;
   text-align: center;
   display: flex;
+}
+
+.wrapper {
+  position: 'absolute'; 
+  left: '50%';
+  top: '50%';
 }
 
 .fire_picture {
@@ -21,7 +27,7 @@
   height: 100px;
 }
 .fire_container {
-  margin-left: 250px;
+  margin-left: 500px;
   text-align: center;
   display: flex;
 }
@@ -33,7 +39,7 @@
   height: 100px;
 }
 .container {
-  margin-left: 215px;
+  margin-left: 450px;
   text-align: center;
   display: flex;
 }
