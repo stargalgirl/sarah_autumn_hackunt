@@ -16,9 +16,8 @@
 }
 
 .wrapper {
-  position: 'absolute'; 
-  left: '50%';
-  top: '50%';
+    text-align: center;
+    display: inline-block;
 }
 
 .fire_picture {
