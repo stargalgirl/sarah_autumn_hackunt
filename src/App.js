@@ -1,25 +1,24 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 import logo from './logo.svg';
 import './App.css';
-
+import Menu from './Menu'
+import Dialog from './Dialog'
+import TwoButtons from './TwoButtons'
 class App extends Component {
+
   render() {
+    console.log()
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn Autumn!!!!!!!
-          </a>
-        </header>
+        <Menu></Menu>
+        <div>
+          <p>SERVERE WEATHER CONDITION:</p>
+          <h1>TORNADO</h1>
+          <Dialog></Dialog>
+        </div>
+        <br></br>
+        <TwoButtons></TwoButtons>
       </div>
     );
   }
