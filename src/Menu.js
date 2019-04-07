@@ -15,6 +15,11 @@ import Menu from '@material-ui/core/Menu';
 import { red } from '@material-ui/core/colors';
 import Drawer from '@material-ui/core/Drawer';
 import Card from './Card';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
+import Button from '@material-ui/core/Button';
+import Form from './Form';
+
 
 const styles = {
 
@@ -30,6 +35,21 @@ const styles = {
   },
   appbar: {
       backgroundColor: '#b71c1c',
+  },
+  card1: {
+    backgroundColor: '#b71c1c',
+    minWidth: 275,
+  },
+  bullet: {
+    display: 'inline-block',
+    margin: '0 2px',
+    transform: 'scale(0.8)',
+  },
+  title: {
+    fontSize: 14,
+  },
+  pos: {
+    marginBottom: 12,
   },
 };
 
@@ -117,11 +137,27 @@ class MenuAppBar extends React.Component {
           <div
             tabIndex={0}
             role="button"
-            onClick={this.toggleDrawer('right', false)}
-            onKeyDown={this.toggleDrawer('right', false)}
           >
           {<div>
-            <Card></Card>
+            <Card className={classes.card1}>
+              <CardContent>
+                <h3>Manage your Emergency Contacts </h3>
+                <Typography className={classes.title} color="textPrimary" gutterBottom>
+                  These contacts will be sent your safety status and location via SMS 
+                </Typography>
+                <Typography>upon clicking the "I'm in Danger" and "I'm Safe" buttons on the homepage</Typography>
+              </CardContent>
+                <Card>
+                    <CardContent>
+                        <Form></Form>
+                    </CardContent>
+                </Card>
+                <CardActions>
+                <div>
+                  <Button size="small" onClick={this.toggleDrawer('right', true)}>SUBMIT</Button>
+                </div>
+              </CardActions>
+            </Card>
           </div>}
           </div>
         </Drawer>
