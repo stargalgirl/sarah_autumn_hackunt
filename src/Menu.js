@@ -78,11 +78,8 @@ class MenuAppBar extends React.Component {
         </FormGroup>
         <AppBar position="static" className={classes.appbar}>
           <Toolbar>
-            <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
-              <MenuIcon />
-            </IconButton>
-            <Typography variant="h6" color="inherit" className={classes.grow}>
-              Safe State
+            <Typography style={{marginLeft:'40px'}} variant="h6" color="inherit" className={classes.grow}>
+             Safe State
             </Typography>
             {auth && (
               <div>
@@ -92,7 +89,7 @@ class MenuAppBar extends React.Component {
                   onClick={this.handleMenu}
                   color="inherit"
                 >
-                  <AccountCircle />
+                  <AccountCircle/>
                 </IconButton>
                 <Menu
                 className="menu-bar"

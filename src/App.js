@@ -21,6 +21,9 @@ class App extends Component {
         </div>
         <br></br>
         <TwoButtons></TwoButtons>
+        <br></br>
+        <h3>Current Radar:</h3>
+      <img src="../badWeather.png" alt="current radar of weather"/>
       </div>
     );
   }
