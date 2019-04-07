@@ -13,6 +13,8 @@ import FormGroup from '@material-ui/core/FormGroup';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
 import { red } from '@material-ui/core/colors';
+import Drawer from '@material-ui/core/Drawer';
+import Card from './Card';
 
 const styles = {
 
@@ -35,6 +37,16 @@ class MenuAppBar extends React.Component {
   state = {
     auth: true,
     anchorEl: null,
+    top: false,
+    left: false,
+    bottom: false,
+    right: false,
+  };
+
+  toggleDrawer = (side, open) => () => {
+    this.setState({
+      [side]: open,
+    });
   };
 
   handleChange = event => {
@@ -97,13 +109,26 @@ class MenuAppBar extends React.Component {
                   open={open}
                   onClose={this.handleClose}
                 >
-                  <MenuItem style={{color:'b71c1c'}} onClick={this.handleClose}>Profile</MenuItem>
-                  <MenuItem style={{color:'b71c1c'}} onClick={this.handleClose}>My account</MenuItem>
+                  <MenuItem style={{color:'b71c1c'}} onClick={this.toggleDrawer('right', true)}>Account Management</MenuItem>
                 </Menu>
               </div>
             )}
           </Toolbar>
         </AppBar>
+        <div>
+        <Drawer anchor="right" open={this.state.right} onClose={this.toggleDrawer('right', false)}>
+          <div
+            tabIndex={0}
+            role="button"
+            onClick={this.toggleDrawer('right', false)}
+            onKeyDown={this.toggleDrawer('right', false)}
+          >
+          {<div>
+            <Card></Card>
+          </div>}
+          </div>
+        </Drawer>
+      </div>
       </div>
     );
   }

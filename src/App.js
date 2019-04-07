@@ -5,6 +5,7 @@ import './App.css';
 import Menu from './Menu'
 import Dialog from './Dialog'
 import TwoButtons from './TwoButtons'
+
 class App extends Component {
 
   render() {
@@ -14,7 +15,8 @@ class App extends Component {
         <Menu></Menu>
         <div>
           <p>SERVERE WEATHER CONDITION:</p>
-          <h1>TORNADO</h1>
+          <h1 style={{marginTop:'10px'}}>TORNADO</h1>
+          <p>Denton, TX 76205</p>
           <Dialog></Dialog>
         </div>
         <br></br>
