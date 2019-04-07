@@ -56,9 +56,9 @@ class App extends Component {
           <Menu></Menu>
           <div>
             <p>SERVERE WEATHER CONDITION:</p>
-            <div className = "container">
+            <div className = "fire_container">
             <h1>FIRE</h1>
-            <img className="picture" src= "../fire.png"/>
+            <img className="fire_picture" src= "../fire.png"/>
             </div>
               <Dialog></Dialog>
           </div>
@@ -73,9 +73,9 @@ class App extends Component {
           <Menu></Menu>
           <div>
             <p>SERVERE WEATHER CONDITION:</p>
-            <div className = "container">
+            <div className = "flood_container">
             <h1>FLOOD</h1>
-            <img className="picture" src= "../flood.png"/>
+            <img className="flood_picture" src= "../flood.png"/>
             </div>
               <Dialog></Dialog>
           </div>
@@ -92,7 +92,7 @@ class App extends Component {
             <p>SERVERE WEATHER CONDITION:</p>
             <div className = "container">
             <h1>HURRICANE</h1>
-            <img className="picture" src= "../earthquake.png"/>
+            <img className="picture" src= "../hurricane.png"/>
             </div>
               <Dialog></Dialog>
           </div>

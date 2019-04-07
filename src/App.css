@@ -2,15 +2,40 @@
   text-align: center;
 }
 
-.picture {
-  margin-left: -300px;
+.flood_picture {
+  margin-left:10px;
+  margin-right: 10px;
   width: 100px;
   height: 100px;
 }
 
-.container {
+.flood_container {
+  margin-left: 215px;
   text-align: center;
-  display: inline-block;
+  display: flex;
+}
+
+.fire_picture {
+  margin-right: 10px;
+  width: 100px;
+  height: 100px;
+}
+.fire_container {
+  margin-left: 250px;
+  text-align: center;
+  display: flex;
+}
+
+.picture {
+  margin-left:10px;
+  margin-right: 10px;
+  width: 100px;
+  height: 100px;
+}
+.container {
+  margin-left: 215px;
+  text-align: center;
+  display: flex;
 }
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
