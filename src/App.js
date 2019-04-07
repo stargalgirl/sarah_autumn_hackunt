@@ -11,9 +11,15 @@ import EarthquakeChecklist from './EarthquakeChecklist'
 import HurricaneChecklist from './HurricaneChecklist'
 import FloodChecklist from './FloodChecklist'
 import FireChecklist from './FireChecklist'
+import Stepper3 from './Stepper3'
+import Stepper2 from './Stepper2'
+import Stepper4 from './Stepper4'
+import Stepper5 from './Stepper5'
+
 
 var list = new List("tornado", "flood", "earthquake", "fire", "hurricane")
 var index = Math.floor(Math.random() * 5)
+//var threat = Math.floor(Math.random() * 5) + 10
 //var weather = list[index];
 
 class App extends Component {
@@ -25,7 +31,8 @@ class App extends Component {
         <div className="App">
           <Menu></Menu>
           <div>
-            <p>SERVERE WEATHER CONDITION:</p>
+            <p>WEATHER CONDITION SEVERITY: LEVEL 4</p>
+            <Stepper4></Stepper4>
             <div className = "container">
             <h1>TORNADO</h1>
             <img className="picture" src= "../tornado.png"/>
@@ -50,7 +57,8 @@ class App extends Component {
         <div className="App">
           <Menu></Menu>
           <div>
-            <p>SERVERE WEATHER CONDITION:</p>
+            <p>WEATHER CONDITION SEVERITY: LEVEL 2</p>
+            <Stepper2></Stepper2>
             <div className = "container">
             <h1>EARTHQUAKE</h1>
             <img className="picture" src= "../earthquake.png"/>
@@ -74,7 +82,8 @@ class App extends Component {
         <div className="App">
           <Menu></Menu>
           <div>
-            <p>SERVERE WEATHER CONDITION:</p>
+            <p>WEATHER CONDITION SEVERITY: LEVEL 5</p>
+            <Stepper5></Stepper5>
             <div className = "fire_container">
             <h1>FIRE</h1>
             <img className="fire_picture" src= "../fire.png"/>
@@ -98,7 +107,8 @@ class App extends Component {
         <div className="App">
           <Menu></Menu>
           <div>
-            <p>SERVERE WEATHER CONDITION:</p>
+            <p>WEATHER CONDITION SEVERITY: LEVEL 2</p>
+            <Stepper2></Stepper2>
             <div className = "flood_container">
             <h1>FLOOD</h1>
             <img className="flood_picture" src= "../flood.png"/>
@@ -122,7 +132,8 @@ class App extends Component {
         <div className="App">
           <Menu></Menu>
           <div>
-            <p>SERVERE WEATHER CONDITION:</p>
+            <p>WEATHER CONDITION SEVERITY: LEVEL 3</p>
+            <Stepper3></Stepper3>
             <div className = "container">
             <h1>HURRICANE</h1>
             <img className="picture" src= "../hurricane.png"/>
