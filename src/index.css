@@ -18,3 +18,13 @@ code {
   object-position: 5px;
   object-fit: contain;
 }
+
+.containerForButtons {
+  text-align: center;
+  display: inline-block;
+}
+
+.twoButtons {
+  width: 150px;
+  height: 115px;
+}
