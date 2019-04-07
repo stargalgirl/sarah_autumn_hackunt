@@ -26,6 +26,8 @@ class App extends Component {
             <h1>TORNADO</h1>
             <img className="picture" src= "../tornado.png"/>
             </div>
+            <br></br>
+            <p>Location: Denton, TX 76205</p>
               <Dialog></Dialog>
           </div>
           <br></br>
@@ -51,6 +53,8 @@ class App extends Component {
             <h1>EARTHQUAKE</h1>
             <img className="picture" src= "../earthquake.png"/>
             </div>
+            <br></br>
+            <p>Location: Denton, TX 76205</p>
               <Dialog></Dialog>
           </div>
           <br></br>
@@ -75,6 +79,8 @@ class App extends Component {
             <h1>FIRE</h1>
             <img className="fire_picture" src= "../fire.png"/>
             </div>
+            <br></br>
+            <p>Location: Denton, TX 76205</p>
               <Dialog></Dialog>
           </div>
           <br></br>
@@ -99,6 +105,8 @@ class App extends Component {
             <h1>FLOOD</h1>
             <img className="flood_picture" src= "../flood.png"/>
             </div>
+            <br></br>
+            <p>Location: Denton, TX 76205</p>
               <Dialog></Dialog>
           </div>
           <br></br>
@@ -123,6 +131,8 @@ class App extends Component {
             <h1>HURRICANE</h1>
             <img className="picture" src= "../hurricane.png"/>
             </div>
+            <br></br>
+            <p>Location: Denton, TX 76205</p>
               <Dialog></Dialog>
           </div>
           <br></br>
